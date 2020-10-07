@@ -1,5 +1,5 @@
 # This file writes the "original/first" employee data file
-# this file creates the data file and adds the employees that will already be there
+# This file creates the data file and adds the employees that will be current employees at start of program
 
 import csv
 from Create_Employees import *
