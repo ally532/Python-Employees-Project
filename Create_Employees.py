@@ -14,7 +14,6 @@ class Employee():
         self.id = DataForAll.count
 
 
-
 class Server(Employee):
     day_wage = 250
 
@@ -32,12 +31,6 @@ class Server(Employee):
         DataForAll.all_emps_list.append(self)
         DataForAll.current_employees.append(self)
         DataForAll.emp_IDs.append(id)
-
-        #fle = open("CurrentEmployees.txt", "a+")
-        #fle.write(
-        #    self.fn + ", " + self.ln + ", " + self.age + ", " + str(self.num) + ", " + str(
-        #        self.id) + ", " + "Server, " + str(self.day_wage) + "\n")
-        #fle.close()
 
 
 class Bartender(Employee):
@@ -57,15 +50,8 @@ class Bartender(Employee):
         DataForAll.all_emps_list.append(self)
         DataForAll.current_employees.append(self)
         DataForAll.emp_IDs.append(id)
-        #fle = open("CurrentEmployees.txt", "a+")
-        #fle.write(
-        #self.fn + ", " + self.ln + ", " + self.age + ", " + str(self.num) + ", " + str(self.id) + ", " + "Bartender, " +str(self.day_wage)+ "\n")
-        #fle.close()
 
-
-
-
-
+        
 class DataForAll():
     count = 100
     all_emps_list = []
@@ -81,13 +67,8 @@ class DataForAll():
 
     def adding_self(self):
         DataForAll.all_emps_list.append(self)
-
-
-
-
-
-
-
+        
+        
 def create_manually():
     fn = input("Firstname: ")
     ln = input("Lastname: ")
@@ -96,6 +77,7 @@ def create_manually():
 
     Employee(fn, ln, age, num, id)
 
+    
 def delete_emp():
     emp = input("Firstname: ")
     emp_ln = input("Lastname: ")
