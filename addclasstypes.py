@@ -1,5 +1,6 @@
 # Final Project 17.10.19
 # This file creates the Employee and DataForAll classes
+# DataForAll class refers to data relevant to all employees (total employee count, current employees, employees currently working)
 
 
 class Employee():
