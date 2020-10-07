@@ -2,7 +2,6 @@
 # This file creates the Employee and DataForAll classes
 
 
-
 class Employee():
     def __init__(self, fn, ln, age, num, id):
 
@@ -18,7 +17,6 @@ class Employee():
         DataForAll.emp_IDs.append(id)
 
 
-
 class Server(Employee):
     day_wage = 250
 
@@ -32,6 +30,7 @@ class Server(Employee):
         self.id = DataForAll.count
         self.day_wage = day_wage
 
+        
 class Bartender(Employee):
     day_wage = 300
     def __init__(self, fn, ln, age, num, id, day_wage):
@@ -55,11 +54,9 @@ class DataForAll():
     def __init__(self):
         pass
 
-
-
+    
     def adding_self(self):
         DataForAll.all_emps_list.append(self)
-
 
 
 def create_manually():
@@ -70,6 +67,7 @@ def create_manually():
 
     Employee(fn, ln, age, num, id)
 
+    
 def delete_emp():
     emp = input("Firstname: ")
     emp_ln = input("Lastname: ")
